@@ -1,0 +1,32 @@
+.form {
+  padding: 2em;
+  background-color: #0b2752;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+label {
+  margin: 0 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 800px) {
+  form {
+    width: 80vw;
+  }
+}

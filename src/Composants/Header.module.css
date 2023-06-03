@@ -1,0 +1,23 @@
+.container {
+  padding: 1em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #fff;
+}
+
+.pastilleWrapper {
+  position: relative;
+}
+
+.pastille {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: red;
+  padding: 5px;
+  border-radius: 10%;
+  font-size: 12px;
+}

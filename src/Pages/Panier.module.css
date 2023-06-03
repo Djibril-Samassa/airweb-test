@@ -1,0 +1,38 @@
+.container {
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product {
+  width: 50vw;
+  background-color: #fff;
+  margin: 1em;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom {
+  margin-top: 5em;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bottom:nth-child(n) {
+  margin: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .product {
+    width: 80vw;
+  }
+}

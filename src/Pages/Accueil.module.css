@@ -1,0 +1,12 @@
+.container {
+  padding: 1em;
+  color: #fff;
+}
+
+.Productcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

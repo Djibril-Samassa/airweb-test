@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40vw;
+  background-color: #fff;
+  margin: 2em 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #0b2752;
+}
+
+.image {
+  border-radius: 50%;
+  width: 5vw;
+  margin: 2em;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 80vw;
+  }
+}
