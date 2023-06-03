@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+**Une fois le projet cloner => "npm install" pour installer toutes les dépendences
+Pour lancer le projet => commande "npm start" depuis l'invite de commande en étant de le repertoire du projet**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Temps de réalisation => 4h**
 
-## Available Scripts
+**Le site est responsive**
 
-In the project directory, you can run:
+**Fonctionnalités codés**
+=> Filtrer les produits par catégories
+=> Annuler le filtrage
+=> Ajouter un produit au panier
+= Supprimer un produit du panier
+=> Voir le nombre de produits dans le panier grâce à la pastille au dessus de l'icône
+=> Passer au paiement ou revenir au panier si plus intéressé
 
-### `npm start`
+**Bibliothèques**
+=> React Bootstrap pour du style par défaut sur des boutons
+=> React Router dom pour simuler une navigation
+=> Axios pour le Data Fetching
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Structure**
+=> J'ai utilisé des composants avec leur propre css grâce au module CSS
+pour gérer facilement le style sans repercussion à d'autres endroits
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Style**
+J'ai utilisé un style précréé pour les boutons, sauf ceux de bootstrap
 
-### `npm test`
+**Point important mise en avant**
+=> S'assurer de toujours avoir la version initiale des données manipulées disponible au cas où
+=> Commenter le code et bien séparer les fonctions même si elles peuvent avoir les similarités
+=> Avoir un code et un style propre et cohérent
+=> Utilisation du local storage pour la performance
+=> Avoir un bon responsive user Friendly qui rempli bien l'écran
+=> Avoir un code compréhensible 
+=> Bon nommage des variables et des fonctions
+=> Bon chargement et éviter des problèmes liés à l'asynchrone
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Amélioration souhaité**
+=> Mettre en # les catégories des produits sur leur carte et cliquer dessus pour pouvoir les filtrer
+=> Utiliser des librairies d'animation pour le changement d'affichage une fois la liste filtrée
+=> Intégration d'un sandbox Paypal ou Stripe pour vraiment simuler un paiement
+=> Page dédiée au produit avec des détails, produit similaires, etc...
+=> Oubli d'ajout des atributs "alt" aux images
 
-### `npm run build`
+![scrc](https://github.com/Djibril-Samassa/airweb-test/assets/132885668/f600259f-a69f-4ba9-b420-e19c3aa23761)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
