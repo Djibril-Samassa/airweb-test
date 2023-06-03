@@ -11,6 +11,7 @@ export default function Panier() {
     fetchPanier();
   }, []);
 
+  // on récuperer le panier sauvegarder en local et on l'assigne à une variable
   const fetchPanier = () => {
     const p = JSON.parse(localStorage.getItem("panier"));
 
@@ -26,12 +27,12 @@ export default function Panier() {
     setPrice(sum);
   };
 
+  // on supprimer un element du panier, on en creer un nouveau sans l'element supprimer et on l'assigne et au local storage et a la liste 
   const deleteFromBasket = (product) => {
     const newPanier = [...panier];
     const indexToDelete = panier.indexOf(product);
     newPanier.splice(indexToDelete, 1);
     localStorage.setItem("panier", JSON.stringify(newPanier));
-    console.log(newPanier);
     fetchPanier();
   };
 
@@ -66,6 +67,7 @@ export default function Panier() {
             </div>
           );
         })}
+        {/* on verifie si il y a des elements dans le panier avant de proposer le paiement */}
         {panier?.length > 0 ? (
           <div className={Style.product}>
             <span>{price}</span>

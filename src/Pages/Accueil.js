@@ -45,6 +45,7 @@ export default function Accueil() {
       <h1>Accueil</h1>
       <div className={Style.Productcontainer}>
         <nav>
+          {/* Possibilité de filtrer par catégorie */}
           {categories.map((categorie) => {
             return (
               <Button
@@ -62,6 +63,7 @@ export default function Accueil() {
               </Button>
             );
           })}
+          {/* vérifier si la liste est filtrée ou pas avant de proposer d'enlever le filtre */}
           {listToDisplay?.length !== products.length ? (
             <Button
               style={{ margin: "5px" }}
@@ -74,6 +76,7 @@ export default function Accueil() {
             </Button>
           ) : null}
         </nav>
+        {/* la liste des produits filtrée ou non */}
         {listToDisplay.map((produit) => {
           return <ProductCard key={produit.id} produit={produit} />;
         })}

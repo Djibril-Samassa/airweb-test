@@ -10,10 +10,7 @@ export default function Header() {
     initialisePastille();
   }, []);
 
-  useEffect(() => {
-    initialisePastille();
-  }, [localStorage]);
-
+  // Mettre au dessus de l'icone du panier le nombre d'articles dedans
   const initialisePastille = () => {
     const panier = JSON.parse(localStorage.getItem("panier"));
 

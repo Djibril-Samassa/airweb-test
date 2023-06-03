@@ -3,6 +3,8 @@ import Style from "./ProductCard.module.css";
 import { Icon } from "@iconify/react";
 export default function ProductCard(props) {
   const [produit, setProduit] = useState(props.produit);
+
+  // Lorsque l'uitlisateur ajoute un produit on determine dabord si on va l'ajouter à une liste déjà existant ou si il sera le premier element de la liste
   const addToBasket = (produit) => {
     const existingPanier = localStorage.getItem("panier");
     let panierArray = [];
