@@ -36,7 +36,6 @@ J'ai utilisé un style précréé pour les boutons, sauf ceux de bootstrap
 => Bon chargement et éviter des problèmes liés à l'asynchrone
 
 **Amélioration souhaité**
-=> Ajouter la description de la categorie filtré sous les catégories
 => Mettre en # les catégories des produits sur leur carte et cliquer dessus pour pouvoir les filtrer
 => Utiliser des librairies d'animation pour le changement d'affichage une fois la liste filtrée
 => Intégration d'un sandbox Paypal ou Stripe pour vraiment simuler un paiement
